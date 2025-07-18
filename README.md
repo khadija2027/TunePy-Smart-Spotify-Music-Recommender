@@ -1,67 +1,62 @@
-🎵 TunePy – Smart Spotify Music Recommender 🎶
-TunePy is a personalized desktop app built using Python that lets users:
+# 🎵 TunePy – Smart Spotify Music Recommender 🎶
 
-Register/login
+**TunePy** is a personalized desktop app built with Python that allows users to discover music tailored to their taste using machine learning and Spotify integration.
 
-Select music genres
+---
 
-Get tailored music recommendations
+## 🚀 Key Features
 
-Play songs via Spotify
+- 🔐 **User Authentication** – Register & log in securely  
+- 🎧 **Genre-Based Filtering** – Select exactly **5 favorite genres**  
+- 🎵 **Personalized Recommendations** – Suggested tracks based on your preferences  
+- 🤖 **KMeans Clustering** – Intelligent song grouping based on audio features  
+- 🎼 **Spotify Playback** – Instantly play songs via Spotify API  
+- 🖼️ **Interactive GUI** – Built with **Tkinter**, featuring visuals & animations  
 
-Enjoy an interactive Tkinter GUI
+---
 
-🚀 Features
-🔐 User Registration & Login
+## 🧠 Tech Stack
 
-🎧 Genre-Based Music Filtering (Pick exactly 5)
+| Category         | Tools / Libraries                               |
+|------------------|-------------------------------------------------|
+| **UI/UX**        | Tkinter, Pillow, tkcalendar                     |
+| **ML & Analysis**| pandas, scikit-learn                            |
+| **Spotify API**  | spotipy                                         |
+| **Environment**  | os, dotenv, sys                                 |
+| **Data**         | `genres_v2.csv` from Spotify                    |
 
-🎵 Personalized Song Selection
+---
 
-🤖 Music Recommendation using KMeans clustering on song features
+## 📊 Dataset
 
-🎼 Direct Playback with Spotify API
+TunePy uses the **Spotify `genres_v2.csv` dataset**, which contains key audio features such as:
 
-🖼️ User-Friendly GUI with visuals and animations (Tkinter + Pillow)
+- 🎵 danceability  
+- ⚡ energy  
+- 🎼 acousticness  
+- 🎚️ tempo  
+- 😊 valence  
+- ...and more
 
-🧠 Tech Stack
-Category	Libraries / Tools
-UI/UX	Tkinter, Pillow, tkcalendar
-ML & Analysis	pandas, scikit-learn
-Spotify API	spotipy
-Environment	os, dotenv, sys
-Data	Spotify's genres_v2.csv dataset
+These features are processed and clustered using the **KMeans algorithm** to find and suggest songs similar to the user's selections.
 
+---
 
-📊 Dataset
-The app uses the Spotify genres_v2.csv dataset, which includes features like:
+## 🎯 How It Works
 
-danceability
+1. 🔑 **Login/Register**
+2. 🎶 **Select 5 Genres**
+3. 💖 **Pick a Favorite Song**
+4. 📈 **KMeans Clustering on Dataset**
+5. 🤝 **Get Similar Song Recommendations**
+6. ▶️ **Play Tracks via Spotify**
 
-energy
+---
 
-acousticness
+## 📍 Clustering Visualization
 
-tempo
+A sample KMeans clustering visualization of audio features:
 
-valence
+![KMeans Clusters](kmeans_clusters.png) <!-- Replace with your actual image path -->
 
-... and more
-
-Clustering is performed using KMeans on these audio features to recommend songs similar to the user’s choice.
-### 🎯 KMeans Clustering Visualization
-
-![KMeans Clusters](kmeans_clusters.png)
-
-💡 How It Works
-Login/Register
-
-Select 5 Genres
-
-Pick a Favorite Song
-
-App Clusters Songs using KMeans
-
-Recommends Similar Tracks
-
-Play via Spotify!
+---
